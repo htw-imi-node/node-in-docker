@@ -1,0 +1,23 @@
+
+$> mkdir dockerize-node
+$> cd dockerize-node/
+$> atom package.json
+$> npm install
+
+$> git init
+$> git add .
+$> git commit -m "inital commit"
+
+$> atom server.js
+$> atom Dockerfile
+$> atom .dockerignore
+$> git add .
+$> git commit -m "server.js and Dockerfile"
+$> git status
+$> docker build -t imimapshtw/node-web-app .
+$> git status
+$> docker images
+$> docker run -p 49160:8080 -d imimapshtw/node-web-app
+$> docker ps
+$> docker logs infallible_varahamihira
+$> history > history.txt
